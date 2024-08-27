@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DCC202 - Atividade 9: (Victor Salles)</title>
 </head>
+
 <body>
     <main>
         <h1>DCC202 - Atividade 9: (Victor Salles)</h1>
-        <p>Esta é a página principal tem código JavaScript nela. Você só verá o resultado no console e durante a depuração.</p>
+        <p>Esta é a página principal tem código JavaScript nela. Você só verá o resultado no console e durante a
+            depuração.</p>
 
     </main>
     <script>
-        let teste = 1;
+        let maria;
+        let joao;
+        maria = {
+            nome: "Maria",
+            qtd: 2
+        }
+        joao = {
+            nome: "Joao",
+            qtd: 1
+        };
+
+        deJoaoParaMaria();
+
+        function deJoaoParaMaria() {
+            maria.qtd += joao.qtd;
+            joao.qtd = 0;
+        }
     </script>
 </body>
+
 </html>
