@@ -19,7 +19,10 @@
         let joao;
         maria = {
             nome: "Maria",
-            qtd: 2
+            qtd: 2,
+            comerMaçã: function () {
+                maria.qtd--;
+            }
         }
         joao = {
             nome: "Joao",
@@ -27,11 +30,15 @@
         };
 
         deJoaoParaMaria();
+        maria.comerMaçã();
 
         function deJoaoParaMaria() {
             maria.qtd += joao.qtd;
             joao.qtd = 0;
         }
+
+        console.log(`${maria.nome} tem ${maria.qtd} de maçãs`);
+        console.log(`${joao.nome} tem ${joao.qtd} de maçãs`);
     </script>
 </body>
 
